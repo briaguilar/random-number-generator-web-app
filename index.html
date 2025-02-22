@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dice Roll Simulation</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Dice Roll Simulation</h1>
+            <form action="result.php" method="POST">
+                <label for="num_dice">Number of Dice:</label>
+                <div class="input"><input class="input" type="number" id="num_dice" name="num_dice" min="1" value="1"></div>
+                <label for="dice_type">Type of Dice</label>
+                <div class="input"><select class="input" id="dice_type" name="dice_type">
+                    <option value="4">D4</option>
+                    <option value="6">D6</option>
+                    <option value="8">D8</option>
+                    <option value="10">D10</option>
+                    <option value="12">D12</option>
+                    <option value="20">D20</option>
+                </select>
+                </div>
+                <button type="submit">Roll Dice</button>
+            </form>
+        </div>
+    </body>
+</html>
